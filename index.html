@@ -5,30 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=menu" />
     <title>Les Jardins d'Enzo</title>
 </head>
-<body>
+<body onresize="resize()">
     <header>
         <nav>
-            <img src="images/logo.jpg" alt="logo de l'entreprise">
-            <img src="images/menu.png" alt="icon menu">
-            <ul>
-                <li><a href="#">Services d'urgence</a></li>
-                <li><a href="#">Services proposés</a></li>
-                <li><a href="#">Contactez-nous</a></li>
+            <img src="images/logo.jpg" alt="logo de l'entreprise" id="logo_header">
+            <span class="material-symbols-rounded" id="bouton_menu" onclick="clickMenu()">menu</span>
         </nav>
-        <section class="hero_section">
+        <menu id="menu">
+            <ul>
+                <li><a href="#services_urgences">Services d'urgence</a></li>
+                <li><a href="#services_proposes">Services proposés</a></li>
+                <li><a href="#contact">Contactez-nous</a></li>
+        </menu>
+        
+        <section id="hero_section">
             <h1>Les Jardins d'Enzo</h1>
             <p>Donnez un côté vert à votre vie</p>
-            <a href="#">Découvrez plus</a>
+            <a href="#services_urgences">Découvrez plus <span>➤</span></a>
         </section>
     </header>
     <main>
         <section id="services_urgences">
-            <h2>Services d'urgences 24/24 et 7/7</h2>
+            <h2>Services d'Urgences 24/24 et 7/7</h2>
             <p>Parce que les imprévus n'attendent pas, Les Jardins d'Enzo intervient rapidement, à toute heure, pour résoudre vos urgences extérieures et vous assurer une tranquillité d'esprit.</p>
             <div id="services_urgences_container">
                 <div class="card_urgence">
@@ -48,26 +49,26 @@
                 </div>
             </div>
         </section>
-        <section id="services proposés">
+        <div class="separateur"></div>
+        <section id="services_proposes">
             <h2>Services proposés</h2>
             <div id="services_proposes_container">
                 <div class="card_service" id="entretien">
-                    <h3>Entretient des espaces vert</h3>
-                    <a href="#">Vérifiez nos services</a>
+                    <h3>Entretien des espaces verts</h3>
+                    <a href="services.html" target="_self">Vérifiez nos services</a>
                 </div>
                 <div class="card_service" id="amenagement">
                     <h3>Aménagement extérieur</h3>
-                    <a href="#">Vérifiez nos services</a>
+                    <a href="services.html" target="_self">Vérifiez nos services</a>
                 </div>
                 <div class="card_service" id="creation">
-                    <h3>Création des espaces vert</h3>
-                    <a href="#">Vérifiez nos services</a>
+                    <h3>Création des espaces verts</h3>
+                    <a href="services.html" target="_self">Vérifiez nos services</a>
                 </div>
             </div>
         </section>
         <section id="phrase_impact">
             <p>Une intervention rapide et fiable pour tous</p>
-            <p>Satisfaction du client au cœur de notre mission</p>
             <p>Des solutions personalisées pour chaque jardin</p>
         </section>
         <section id="histoire_valeurs">
@@ -90,32 +91,50 @@
                 <h3>Zone d'intervention</h3>
                 <p>30 km autour de Thionville</p>
         </section>
-        <footer>
-            <img src="images/logo.jpg" alt="logo de l'entreprise">
-            <div id="reseaux_sociaux">
-                <img src="images/facebook.png" alt="icon facebook">
-                <img src="images/instagram.png" alt="icon instagram">
-                <img src="images/linkedin.png" alt="icon linkedin">
-            </div>
-            <p>Contact :</p>
-            <p>contact.lesjardinsdenzo@gmail.com</p>
-            <div id="acceuil">
-                <p>Acceuil</p>
-                <ul>
-                    <li><a href="#">Urgences</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div id="services">
-                <p>Services</p>
-                <ul>
-                    <li><a href="#">Entretien</a></li>
-                    <li><a href="#">Aménagement</a></li>
-                    <li><a href="#">Création</a></li>
-                </ul>
-            </div>
-        </footer>
     </main>
+    <footer>
+        <img src="images/logo.jpg" alt="logo de l'entreprise" id="logo_footer">
+        <div id="reseaux_sociaux">
+            <img src="images/facebook.png" alt="icon facebook">
+            <img src="images/instagram.png" alt="icon instagram">
+            <img src="images/linkedin.png" alt="icon linkedin">
+        </div>
+        <p>Contact :</p>
+        <p>contact.lesjardinsdenzo@gmail.com</p>
+        <div id="acceuil">
+            <p>Acceuil</p>
+            <ul>
+                <li><a href="#services_urgences">Urgences</a></li>
+                <li><a href="#services_proposes">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div id="services">
+            <p>Services</p>
+            <ul>
+                <li><a href="services.html#entretien">Entretien</a></li>
+                <li><a href="services.html#amenagement">Aménagement</a></li>
+                <li><a href="services.html#creation">Création</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function clickMenu() {
+            let menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+        function resize() {
+            let menu = document.getElementById("menu");
+            if (window.innerWidth >= 768) {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
