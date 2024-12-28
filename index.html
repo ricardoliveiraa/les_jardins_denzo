@@ -5,9 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    </style>
     <title>Les Jardins d'Enzo</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <img src="images/logo.jpg" alt="logo de l'entreprise">
+            <img src="images/menu.png" alt="icon menu">
+            <ul>
+                <li><a href="#">Services d'urgence</a></li>
+                <li><a href="#">Services proposés</a></li>
+                <li><a href="#">Contactez-nous</a></li>
+        </nav>
+        <section class="hero_section">
+            <h1>Les Jardins d'Enzo</h1>
+            <p>Donnez un côté vert à votre vie</p>
+            <a href="#">Découvrez plus</a>
+        </section>
+    </header>
+    <main>
+        <section id="services_urgences">
+            <h2>Services d'urgences 24/24 et 7/7</h2>
+            <p>Parce que les imprévus n'attendent pas, Les Jardins d'Enzo intervient rapidement, à toute heure, pour résoudre vos urgences extérieures et vous assurer une tranquillité d'esprit.</p>
+            <div id="services_urgences_container">
+                <div class="card_urgence">
+                    <img src="images/arbre_tombe.jpeg" alt="urgence 1 : arbre tombé">
+                    <h3>Élagage d'arbres</h3>
+                    <p>Nous agissons vite pour dégager les arbres tombés et rétablir la sécurité.</p>
+                </div>
+                <div class="card_urgence">
+                    <img src="images/neige.jpeg" alt="urgence 2 : service hivernale">
+                    <h3>Service hivernale</h3>
+                    <p>Protégez vos extérieurs des rigueurs de l'hiver grâce à une intervention rapide et adaptée.</p>
+                </div>
+                <div class="card_urgence">
+                    <img src="images/inondation.jpeg" alt="urgence 3 : inondation">
+                    <h3>Gestion des inondations</h3>
+                    <p>Intervention rapide pour limiter les dégâts et restaurer vos espaces extérieurs.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services proposés">
+            <h2>Services proposés</h2>
+            <div id="services_proposes_container">
+                <div class="card_service" id="entretien">
+                    <h3>Entretient des espaces vert</h3>
+                    <a href="#">Vérifiez nos services</a>
+                </div>
+                <div class="card_service" id="amenagement">
+                    <h3>Aménagement extérieur</h3>
+                    <a href="#">Vérifiez nos services</a>
+                </div>
+                <div class="card_service" id="creation">
+                    <h3>Création des espaces vert</h3>
+                    <a href="#">Vérifiez nos services</a>
+                </div>
+            </div>
+        </section>
+        <section id="phrase_impact">
+            <p>Une intervention rapide et fiable pour tous</p>
+            <p>Satisfaction du client au cœur de notre mission</p>
+            <p>Des solutions personalisées pour chaque jardin</p>
+        </section>
+        <section id="histoire_valeurs">
+            <h2>Découvrez l'histoire et les valeurs Des Jardins d'Enzo</h2>
+            <p>Les Jardins d'Enzo, fondé par un jeune passionné de jardinage, met un point d'honneur à offrir des services fiables et accessibles. Avec la satisfaction client et le respect de l'environnement au cœur de son activité, l'entreprise garantit des espaces verts soignés et harmonieux.</p>
+        </section>
+        <section id="contact">
+            <div class="contact_card">
+                <img src="images/mail.png" alt="icon mail">
+                <h3>Mail</h3>
+                <p>contact.lesjardinsdenzo@gmail.com</p>
+            </div>
+            <div class="contact_card">
+                <img src="images/call.png" alt="icon telephone">
+                <h3>Téléphone</h3>
+                <p>06 41 00 67 36</p>
+            </div>
+            <div class="contact_card">
+                <img src="images/location.png" alt="icon adresse">
+                <h3>Zone d'intervention</h3>
+                <p>30 km autour de Thionville</p>
+        </section>
+        <footer>
+            <img src="images/logo.jpg" alt="logo de l'entreprise">
+            <div id="reseaux_sociaux">
+                <img src="images/facebook.png" alt="icon facebook">
+                <img src="images/instagram.png" alt="icon instagram">
+                <img src="images/linkedin.png" alt="icon linkedin">
+            </div>
+            <p>Contact :</p>
+            <p>contact.lesjardinsdenzo@gmail.com</p>
+            <div id="acceuil">
+                <p>Acceuil</p>
+                <ul>
+                    <li><a href="#">Urgences</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div id="services">
+                <p>Services</p>
+                <ul>
+                    <li><a href="#">Entretien</a></li>
+                    <li><a href="#">Aménagement</a></li>
+                    <li><a href="#">Création</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>

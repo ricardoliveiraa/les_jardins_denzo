@@ -8,3 +8,13 @@
     --couleur5: #F2F2F2;
     --couleur6: #EFA92A;
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins;
+}
