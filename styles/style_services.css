@@ -18,4 +18,295 @@
 
 body {
     font-family: poppins, sans-serif;
+    background-color: white;
+    width: 100vw;
+}
+
+
+
+header {
+    height: 40vh;
+    background-color: var(--couleur3);
+    background-image: url(../images/background_principal.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#logo_header {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#bouton_menu {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 4em;
+}
+
+menu ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    list-style: none;
+    height: 90px;
+    justify-content: space-evenly;
+}
+
+menu a {
+    text-decoration: none;
+    padding: 15px;
+    margin: 15px 0px;
+    width: fit-content;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+menu a:hover {
+    color: var(--couleur3);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+
+
+
+
+section#hero_section h1 {
+    font-size: 4em;
+    color: var(--couleur6);
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.784);
+    font-family: "Yanone Kaffeesatz", serif;
+}
+
+section#hero_section p {
+    font-size: 1em;
+    color: #F2F2F2;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.784);
+}
+
+
+
+
+.separateur {
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    margin: 0px auto;
+}
+
+
+
+
+section.description_service {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+section#entretien > div.card {
+    background-image: url(../images/exemple2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section#amenagement > div.card {
+    background-image: url(../images/exemple1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section#creation > div.card {
+    background-image: url(../images/exemple3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section#entretien {
+    background-color: var(--couleur5);
+}
+
+section#creation {
+    background-color: var(--couleur5);
+}
+
+
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 50px;
+    background-color: var(--couleur4);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.236);
+    width: 80%;
+    height: 200px;
+}
+
+div.card > h2 {
+    font-size: 2em;
+    color: var(--couleur5);
+    margin: 10px;
+    font-family: "Yanone Kaffeesatz", serif;
+}
+
+div.texte {
+    font-size: 1.2em;
+    color: var(--couleur1);
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+section#phrase_impact {
+    background-image: url(../images/feuille.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#phrase_impact > p {
+    font-size: 1.5em;
+    color: var(--couleur5);
+    text-align: center;
+    margin: 10px; 
+}
+
+
+
+
+
+section#contact {
+    background-color: white;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+}
+
+
+div.contact_card {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 80%;
+    height: 250px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div.contact_card > img {
+    height: 200px;
+    width: 200px;
+}
+
+div.contact_card > h3 {
+    font-size: 2em;
+    color: var(--couleur1);
+    margin: 10px;
+}
+
+div.contact_card > p {
+    font-size: 1.2em;
+    color: var(--couleur1);
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+
+
+footer {
+    background-color: white;
+    padding: 50px 10px;
+}
+
+div#images_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+div#images_footer img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+div#reseaux_sociaux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+div#reseaux_sociaux img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+div#contact_footer > p {
+    font-size: 1.2em;
+    color: var(--couleur1);
+    text-align: center;
+    margin: 10px;
+}
+    
+div#menu_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+div#menu_footer a {
+    text-decoration: none;
+    color: var(--couleur1);
+    font-size: 1.5em;
+}
+
+div#menu_footer a:hover {
+    color: var(--couleur6);
+    transition: color 0.3s;
+}
+
+div#menu_footer a::after {
+    content: '\00A0\1F517';
 }

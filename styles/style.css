@@ -4,11 +4,11 @@
 :root {
     --couleur1: #062326;
     --couleur2: #11D990;
-    --couleur3: #27C225;
+    --couleur3: #02733E;
     --couleur4: #80A698;
     --couleur5: #F2F2F2;
     --couleur6: #EFA92A;
-    --couleur7: #c7ecbf;
+    --couleur7: #012611;
 }
 
 * {
@@ -19,11 +19,15 @@
 
 body {
     font-family: poppins, sans-serif;
+    width: 100vw;
 }
+
+
+
+
 
 header {
     height: 100vh;
-    width: 100vw;
     background-color: var(--couleur3);
     background-image: url(../images/background_principal.jpeg);
     background-size: cover;
@@ -79,10 +83,14 @@ menu a {
 }
 
 menu a:hover {
-    color: #11D990;
+    color: var(--couleur3);
     text-decoration: underline;
     transition: color 0.3s;
 }
+
+
+
+
 
 section#hero_section h1 {
     font-size: 4em;
@@ -120,10 +128,14 @@ section#hero_section a:hover {
     transition: background-color 0.3s, color 0.3s;
 }
 
+
+
+
+
+
 section#services_urgences {
-    background-color: var(--couleur5);
+    background-color: white;
     padding: 50px 0px;
-    width: 100vw;
 }
 
 section#services_urgences h2 {
@@ -140,6 +152,7 @@ section#services_urgences > p {
     color: var(--couleur1);
     text-align: center;
     margin-bottom: 50px;
+    padding: 0px 20px;
 }
 
 section#services_urgences_container {
@@ -147,7 +160,6 @@ section#services_urgences_container {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
 }
 
 div.card_urgence {
@@ -155,7 +167,7 @@ div.card_urgence {
     display: flex;
     flex-direction: column;
     margin: 50px;
-    background-color: var(--couleur4);
+    background-color: var(--couleur7);
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.236);
 }
@@ -163,7 +175,7 @@ div.card_urgence {
 
 div.card_urgence > h3 {
     font-size: 2em;
-    color: var(--couleur1);
+    color: var(--couleur5);
     text-align: center;
     margin: 10px;
     font-family: "Yanone Kaffeesatz", serif;
@@ -171,7 +183,7 @@ div.card_urgence > h3 {
 
 div.card_urgence > p {
     font-size: 1em;
-    color: var(--couleur1);
+    color: var(--couleur5);
     text-align: center;
     margin: 10px;
 }
@@ -190,10 +202,11 @@ div.card_urgence > img {
 }
 
 
+
+
 section#services_proposes {
-    background-color: white;
+    background-color: var(--couleur5);
     padding: 50px 0px;
-    width: 100vw;
 }
 
 section#services_proposes h2 {
@@ -209,6 +222,219 @@ div#services_proposes_container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
+
+
+div.card_service {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    background-color: var(--couleur4);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.236);
+    width: 80%;
+    height: 250px;
+    justify-content: flex-end;
+}
+
+div#entretien {
+    background-image: url(../images/exemple2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div#amenagement {
+    background-image: url(../images/exemple1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div#creation {
+    background-image: url(../images/exemple3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+div.card_service > h3 {
+    font-size: 2em;
+    color: var(--couleur5);
+    margin: 10px;
+    font-family: "Yanone Kaffeesatz", serif;
+}
+
+div.card_service > a {
+    background-color: var(--couleur6);
+    color: var(--couleur5);
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+div.card_service > a:hover {
+    background-color: var(--couleur5);
+    color: var(--couleur6);
+    border: 1px solid var(--couleur6);
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+div.card_service > a::after {
+    content: '\00A0\1F517';
+}
+
+
+
+
+section#phrase_impact {
+    background-image: url(../images/feuille.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section#phrase_impact > p {
+    font-size: 1.5em;
+    color: var(--couleur5);
+    text-align: center;
+    margin: 10px; 
+}
+
+
+
+section#histoire_valeurs {
+    background-color: var(--couleur5);
+    padding: 50px 0px;
+}
+
+section#histoire_valeurs h2 {
+    font-size: 2.5em;
+    color: var(--couleur1);
+    text-align: center;
+    font-family: "Yanone Kaffeesatz", serif;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.236);
+}
+
+section#histoire_valeurs > p {
+    font-size: 1em;
+    color: var(--couleur1);
+    text-align: center;
+    margin: 20px;
+    padding: 0px 20px;
+}
+
+/*Peut etre une image d'Enzo habillé en tenue de travail*/
+
+
+
+
+section#contact {
+    background-color: white;
+    padding: 50px 10px;
     width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+}
+
+
+div.contact_card {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 80%;
+    height: 250px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+div.contact_card > img {
+    height: 200px;
+    width: 200px;
+}
+
+div.contact_card > h3 {
+    font-size: 2em;
+    color: var(--couleur1);
+    margin: 10px;
+}
+
+div.contact_card > p {
+    font-size: 1.2em;
+    color: var(--couleur1);
+    text-align: center;
+    margin: 10px;
+}
+
+
+
+
+
+footer {
+    background-color: white;
+    padding: 50px 10px;
+}
+
+div#images_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    
+div#images_footer img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+div#reseaux_sociaux {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+div#reseaux_sociaux img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+div#contact_footer > p {
+    font-size: 1.2em;
+    color: var(--couleur1);
+    text-align: center;
+    margin: 10px;
+}
+    
+div#menu_footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+div#menu_footer a {
+    text-decoration: none;
+    color: var(--couleur1);
+    font-size: 1.5em;
+}
+
+div#menu_footer a:hover {
+    color: var(--couleur6);
+    transition: color 0.3s;
+}
+
+div#menu_footer a::after {
+    content: '\00A0\1F517';
 }
