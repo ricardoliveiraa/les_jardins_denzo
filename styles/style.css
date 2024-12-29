@@ -115,7 +115,7 @@ section#hero_section p {
 
 section#hero_section a {
     display: block;
-    width: 200px;
+    width: fit-content;
     margin: 50px auto;
     padding: 10px;
     text-align: center;
