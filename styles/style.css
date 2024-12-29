@@ -59,6 +59,11 @@ nav {
     font-size: 4em;
 }
 
+#menu_container {
+    display:flex
+    flex-flow: column wrap;
+}
+
 menu {
     display: none;
 }
@@ -88,7 +93,6 @@ menu a {
 
 menu a:hover {
     color: var(--couleur3);
-    text-decoration: underline;
     transition: color 0.3s;
 }
 
@@ -193,7 +197,6 @@ div.card_urgence > p {
 }
 
 div.card_urgence > img {
-    width: 100%;
     height: 200px;
     object-fit: cover;   
 }
@@ -301,6 +304,7 @@ section#phrase_impact {
     padding: 50px 10px;
     display: flex;
     justify-content: space-between;
+    flex-flow: column wrap;
 }
 
 section#phrase_impact > p {
@@ -340,7 +344,7 @@ section#histoire_valeurs > p {
 
 section#contact {
     background-color: white;
-    padding: 30px 0px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: space-evenly;
     flex-flow: column wrap;
@@ -363,13 +367,13 @@ div.contact_card > img {
 }
 
 div.contact_card > h3 {
-    font-size: 1.7em;
+    font-size: 1.4em;
     color: var(--couleur1);
     margin: 10px;
 }
 
 div.contact_card > p {
-    font-size: 1em;
+    font-size: 0.8em;
     color: var(--couleur1);
     text-align: center;
 }
@@ -439,3 +443,5 @@ div#menu_footer a:hover {
 div#menu_footer a::after {
     content: '\00A0\1F517';
 }
+
+/*Media Queries*/

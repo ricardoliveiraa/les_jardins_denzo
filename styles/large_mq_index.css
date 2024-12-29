@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+:root {
+    --couleur1: #062326;
+    --couleur2: #11D990;
+    --couleur3: #02733E;
+    --couleur4: #80A698;
+    --couleur5: #F2F2F2;
+    --couleur6: #EFA92A;
+    --couleur7: #012611;
+}
+
+
+#bouton_menu {
+    display: none;
+}
+
+
+div#menu_container {
+    display: block;
+}
+
+menu ul {
+    all: unset;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+menu a {
+    margin: 0px 5px;
+}
+
+
+
+section#services_urgences_container {
+    all: unset;
+}
+
+div.card_urgence {
+    all: unset;
+}
