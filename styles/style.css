@@ -59,6 +59,10 @@ nav {
     font-size: 4em;
 }
 
+menu {
+    display: none;
+}
+
 menu ul {
     display: flex;
     flex-direction: column;
