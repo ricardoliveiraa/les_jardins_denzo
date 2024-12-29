@@ -19,7 +19,7 @@
 body {
     font-family: poppins, sans-serif;
     background-color: white;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -214,7 +214,7 @@ section#phrase_impact > p {
 
 section#contact {
     background-color: white;
-    padding: 50px 10px;
+    padding: 30px 0px;
     display: flex;
     justify-content: space-evenly;
     flex-flow: column wrap;
@@ -224,29 +224,28 @@ section#contact {
 div.contact_card {
     display: flex;
     flex-direction: column;
-    margin: 50px;
     width: 80%;
     height: 250px;
+    margin: auto;
     justify-content: flex-end;
     align-items: center;
 }
 
 div.contact_card > img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 }
 
 div.contact_card > h3 {
-    font-size: 2em;
+    font-size: 1.7em;
     color: var(--couleur1);
     margin: 10px;
 }
 
 div.contact_card > p {
-    font-size: 1.2em;
+    font-size: 1em;
     color: var(--couleur1);
     text-align: center;
-    margin: 10px;
 }
 
 
@@ -254,7 +253,7 @@ div.contact_card > p {
 
 
 footer {
-    background-color: white;
+    background-color: var(--couleur5);
     padding: 50px 10px;
 }
 

@@ -19,7 +19,7 @@
 
 body {
     font-family: poppins, sans-serif;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -330,8 +330,7 @@ section#histoire_valeurs > p {
     font-size: 1em;
     color: var(--couleur1);
     text-align: center;
-    margin: 20px;
-    padding: 0px 20px;
+    padding: 20px 20px;
 }
 
 /*Peut etre une image d'Enzo habillé en tenue de travail*/
@@ -341,8 +340,7 @@ section#histoire_valeurs > p {
 
 section#contact {
     background-color: white;
-    padding: 50px 10px;
-    width: 100vw;
+    padding: 30px 0px;
     display: flex;
     justify-content: space-evenly;
     flex-flow: column wrap;
@@ -352,29 +350,28 @@ section#contact {
 div.contact_card {
     display: flex;
     flex-direction: column;
-    margin: 50px;
     width: 80%;
     height: 250px;
+    margin: auto;
     justify-content: flex-end;
     align-items: center;
 }
 
 div.contact_card > img {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 }
 
 div.contact_card > h3 {
-    font-size: 2em;
+    font-size: 1.7em;
     color: var(--couleur1);
     margin: 10px;
 }
 
 div.contact_card > p {
-    font-size: 1.2em;
+    font-size: 1em;
     color: var(--couleur1);
     text-align: center;
-    margin: 10px;
 }
 
 
@@ -382,8 +379,8 @@ div.contact_card > p {
 
 
 footer {
-    background-color: white;
-    padding: 50px 10px;
+    background-color: var(--couleur5);
+    padding: 50px 0px;
 }
 
 div#images_footer {
