@@ -60,7 +60,7 @@ nav {
 }
 
 #menu_container {
-    display:flex
+    display: flex;
     flex-flow: column wrap;
 }
 
@@ -146,7 +146,7 @@ section#services_urgences {
     padding: 50px 0px;
 }
 
-section#services_urgences h2 {
+div#services_urgences_text h2 {
     font-size: 2.5em;
     color: var(--couleur1);
     text-align: center;
@@ -155,7 +155,7 @@ section#services_urgences h2 {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.236);
 }
 
-section#services_urgences > p {
+div#services_urgences_text > p {
     font-size: 1em;
     color: var(--couleur1);
     text-align: center;
@@ -163,23 +163,24 @@ section#services_urgences > p {
     padding: 0px 20px;
 }
 
-section#services_urgences_container {
+
+
+div#services_urgences_container {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 div.card_urgence {
-    flex: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
     background-color: var(--couleur7);
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.236);
+    margin: 10px;
+    flex: 1 1 100%;
 }
-
 
 div.card_urgence > h3 {
     font-size: 2em;
@@ -198,8 +199,15 @@ div.card_urgence > p {
 
 div.card_urgence > img {
     height: 200px;
+    width: 100%;
     object-fit: cover;   
+    border-radius: 10px 10px 0 0;
 }
+
+
+
+
+
 
 .separateur {
     width: 90%;

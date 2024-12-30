@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+section.description_service {
+    flex-flow: row wrap;
+}
+
+div.card {
+    width: 30%;
+}
+
+div.texte {
+    width: 50%;
+}

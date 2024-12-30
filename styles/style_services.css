@@ -25,7 +25,7 @@ body {
 
 
 header {
-    height: 40vh;
+    height: 60vh;
     background-color: var(--couleur3);
     background-image: url(../images/background_principal.jpeg);
     background-size: cover;
@@ -57,6 +57,11 @@ nav {
     font-size: 4em;
 }
 
+#menu_container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
 menu {
     display: none;
 }
@@ -70,7 +75,7 @@ menu ul {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 5px;
     list-style: none;
-    height: 90px;
+    height: 110px;
     justify-content: space-evenly;
 }
 
@@ -86,7 +91,6 @@ menu a {
 
 menu a:hover {
     color: var(--couleur3);
-    text-decoration: underline;
     transition: color 0.3s;
 }
 
@@ -95,6 +99,7 @@ menu a:hover {
 
 
 section#hero_section h1 {
+    margin-bottom: 10vh;
     font-size: 3em;
     color: var(--couleur6);
     text-align: center;
@@ -215,7 +220,7 @@ section#phrase_impact > p {
 
 section#contact {
     background-color: white;
-    padding: 30px 0px;
+    margin-bottom: 70px;
     display: flex;
     justify-content: space-evenly;
     flex-flow: column wrap;
@@ -238,13 +243,13 @@ div.contact_card > img {
 }
 
 div.contact_card > h3 {
-    font-size: 1.7em;
+    font-size: 1.4em;
     color: var(--couleur1);
     margin: 10px;
 }
 
 div.contact_card > p {
-    font-size: 1em;
+    font-size: 0.8em;
     color: var(--couleur1);
     text-align: center;
 }

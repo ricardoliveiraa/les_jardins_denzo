@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style_services.css">
+    <link rel="stylesheet" href="styles/medium_mq_services.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/large_mq_services.css" media="screen and (min-width: 992px)">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,0,0&icon_names=menu" />
     <title>Les Jardin d'Enzo</title>
 </head>
@@ -12,14 +14,18 @@
     <header>
         <nav>
             <img src="images/logo.jpg" alt="logo de l'entreprise" id="logo_header">
-            <span class="material-symbols-rounded" id="bouton_menu" onclick="clickMenu()">menu</span>
+            <div id="menu_container">
+                <span class="material-symbols-rounded" id="bouton_menu" onclick="clickMenu()">menu</span>
+                <menu id="menu">
+                    <ul>
+                        <li><a href="#entretient">Entretien</a></li>
+                        <li><a href="#amenagement">Aménagement</a></li>
+                        <li><a href="#creation">Création</a></li>
+                        <li><a href="#contact">Contactez-nous</a></li>
+                </menu>
+            </div>
         </nav>
-        <menu id="menu">
-            <ul>
-                <li><a href="#services_urgences">Services d'urgence</a></li>
-                <li><a href="#services_proposes">Services proposés</a></li>
-                <li><a href="#contact">Contactez-nous</a></li>
-        </menu>
+
         <section id="hero_section">
             <h1>Les Serices Proposés</h1>
             <p>Découvrez ce que Les Jardins d'Enzo vous propose</p>

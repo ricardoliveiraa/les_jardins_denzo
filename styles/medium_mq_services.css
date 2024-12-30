@@ -2,6 +2,8 @@
 
 
 
+
+
 #bouton_menu {
     display: none;
 }
@@ -36,4 +38,3 @@ section#phrase_impact {
 section#contact {
     flex-flow: row;
 }
-
